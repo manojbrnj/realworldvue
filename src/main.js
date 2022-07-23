@@ -6,9 +6,11 @@ import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 
-new Vue({
+// eslint-disable-next-line no-unused-vars
+const app = new Vue({
   router,
   store,
   vuetify,
   render: (h) => h(App),
 }).$mount("#app");
+console.log(app);

@@ -1,5 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <EventCard></EventCard>
   </div>
 </template>
+<script>
+import EventCard from "@/components/EventCard.vue";
+export default {
+  name: "AboutView",
+  components: {
+    EventCard,
+  },
+  data: function () {
+    return {
+      dat: "",
+    };
+  },
+};
+</script>
+<style lang=""></style>
